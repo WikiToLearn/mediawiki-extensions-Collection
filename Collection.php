@@ -134,6 +134,23 @@ $wgCollectionRendererSettings = array(
 			'coll-setting-columns-2' => '2',
 		),
 	),
+	
+	/**
+        * Hidden settings that provide to set custom left and middle footer
+        * into LocalSettings.php.
+        * **** !!!! ***
+        * Right footer is setted to {thePage} / {lastPage} 
+        * directly into mw-ocg-latexer/lib/index.js
+	*/
+	'footer' => array(
+		'type' => 'select',
+		'label-message' => 'coll-setting-footer',
+		'default' => 'yes',
+		'options' => array(
+			'coll-setting-footer-yes' => 'yes',
+			'coll-setting-footer-no' => 'no',
+		),
+	),
 );
 
 /** Some commands require an external server

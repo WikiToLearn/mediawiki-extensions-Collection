@@ -166,7 +166,9 @@ abstract class CollectionRenderingAPI {
 			'type' => 'collection',
 			'licenses' => $this->getLicenseInfos()
 		);
-
+		
+		$result['footerLeft'] = wfMessage( 'coll-setting-footer-left' )->inContentLanguage()->plain();
+                $result['footerMiddle'] = wfMessage( 'coll-setting-footer-middle' )->inContentLanguage()->plain();
 		if ( isset( $collection['title'] ) ) {
 			$result['title'] = $collection['title'];
 		}
