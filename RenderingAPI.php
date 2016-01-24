@@ -167,8 +167,6 @@ abstract class CollectionRenderingAPI {
 			'licenses' => $this->getLicenseInfos()
 		);
 		
-		$result['footerLeft'] = wfMessage( 'coll-setting-footer-left' )->inContentLanguage()->plain();
-                $result['footerMiddle'] = wfMessage( 'coll-setting-footer-middle' )->inContentLanguage()->plain();
 		if ( isset( $collection['title'] ) ) {
 			$result['title'] = $collection['title'];
 		}
@@ -179,6 +177,14 @@ abstract class CollectionRenderingAPI {
 			foreach ( $collection['settings'] as $key => $val ) {
 				$result[$key] = $val;
 			}
+			//Add text for the footer in appropriate language
+			$result['footerLeft'] = wfMessage('coll-setting-footer-text-left')->
+                            inContentLanguage()->plain();
+                        $result['footerMiddle'] = wfMessage('coll-setting-footer-text-middle')->
+                            inContentLanguage()->plain();			
+                        $result['footerRight'] = wfMessage('coll-setting-footer-text-right')->
+                            inContentLanguage()->plain();
+                        
 			// compatibility with old mw-serve
 			$result['settings'] = $collection['settings'];
 		}
