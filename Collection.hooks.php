@@ -127,7 +127,7 @@ class CollectionHooks {
 			$params['writer'] = $writer;
 			$out[] = Array( 'text' => $sk->msg( 'coll-download_as', $wgCollectionFormats[$writer] )->escaped(),
 				        'id' => 'coll-download-as-' . $writer,
-					'href' => $booktitle->getLocalURL( $params )
+					'href' => $booktitle->getLocalURL( $params ),
 				 );
 		}
 

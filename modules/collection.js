@@ -84,6 +84,7 @@
                     );
             $( '#renderingStatus' ).html("<i class='fa fa-thumbs-o-up'></i>"
                     );
+            $('#renderingGif').remove();
  			location.reload(true);
  		}
  	} );
