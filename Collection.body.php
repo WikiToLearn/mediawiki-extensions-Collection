@@ -1076,14 +1076,15 @@ class SpecialCollection extends SpecialPage {
 			$out->addTemplate( $template );
 			break;
 		case 'finished':
-			$out->setPageTitle( $this->msg( 'coll-rendering_finished_title' ) );
-
+			/*$out->setPageTitle( $this->msg( 'coll-rendering_finished_title' ) );
+			$out->addInlineScript( 'location.href = "' . wfExpandUrl( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=download&' . $query ), PROTO_CURRENT ) . '"');
 			$template = new CollectionFinishedTemplate();
 			$template->set( 'download_url', wfExpandUrl( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=download&' . $query ), PROTO_CURRENT ) );
 			$template->set( 'is_cached', $request->getVal( 'is_cached' ) );
 			$template->set( 'query', $query );
 			$template->set( 'return_to', $return_to );
-			$out->addTemplate( $template );
+			$out->addTemplate( $template );*/
+			$out->redirect( wfExpandUrl( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=download&' . $query ), PROTO_CURRENT ));
 			break;
 		case 'failed':
 			$out->setPageTitle( $this->msg( 'coll-rendering_failed_title' ) );
