@@ -1073,6 +1073,7 @@ class SpecialCollection extends SpecialPage {
 				$progress = 0.00;
 			}
 			$template->set( 'progress', $progress );
+			$template->set( 'return_to', $return_to );
 			$out->addTemplate( $template );
 			break;
 		case 'finished':
