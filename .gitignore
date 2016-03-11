@@ -1,2 +1,9 @@
 node_modules
 npm-debug.log
+
+# Composer
+/vendor
+/composer.lock
+/composer.json
+/composer.local.json
+
