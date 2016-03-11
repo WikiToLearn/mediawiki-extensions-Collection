@@ -397,8 +397,6 @@ class CollectionRenderingTemplate extends QuickTemplate {
 		</div>
 		<span style="display:none" id="renderingStatusText"><?php echo wfMessage( 'coll-rendering_status', '%PARAM%' )->parse() ?></span>
 		<span style="display:none" id="renderingArticle"><?php echo ' ' . wfMessage( 'coll-rendering_article', '%PARAM%' )->parse() ?></span>
-<!-- <img id="renderingGif" class="center-block img-responsive" src="<?php echo htmlspecialchars( $mediapath . 'Pulse40.gif' ) ?>" alt="" />
-	<br> -->
 	<span style="display:none" id="renderingPage"><?php echo ' ' . wfMessage( 'coll-rendering_page', '%PARAM%' )->parse() ?></span>
 	<?php echo wfMessage( 'coll-rendering_text' )
 	->numParams( number_format( $this->data['progress'], 2, '.', '' ) )
