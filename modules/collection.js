@@ -62,13 +62,13 @@
  	}, function ( result ) {
  		if ( result.state === 'progress' ) {
  			if ( result.status.progress ) {
-                 $('#renderingProgressBar')
-                    .css('width', mw.language.convertNumber( result.status.progress ) + '%')
-                    .attr('aria-valuenow', mw.language.convertNumber( result.status.progress ));
-                $('#renderingProgressBar strong').html(mw.language.convertNumber( result.status.progress ) + '%');
+                $('#renderingProgressBar')
+                .css('width', result.status.progress + '%')
+                .attr('aria-valuenow', result.status.progress );
+                $('#renderingProgressBar strong').html(result.status.progress + '%');
  				$( '#renderingProgress' ).html(
- 					mw.language.convertNumber( result.status.progress )
- 					);
+ 				 mw.language.convertNumber( result.status.progress )
+ 				);
  			}
  			if ( result.status.status ) {
  				var status = result.status.status;
