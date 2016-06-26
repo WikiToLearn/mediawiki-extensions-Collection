@@ -134,12 +134,12 @@ $wgCollectionRendererSettings = array(
 			'coll-setting-columns-2' => '2',
 		),
 	),
-	
+
 	/**
         * Hidden settings that provide to set custom left and middle footer
         * into LocalSettings.php.
         * **** !!!! ***
-        * Right footer is setted to {thePage} / {lastPage} 
+        * Right footer is setted to {thePage} / {lastPage}
         * directly into mw-ocg-latexer/lib/index.js
 	*/
 	'footer' => array(
@@ -213,7 +213,11 @@ $wgExtensionMessagesFiles['CollectionAlias'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Book'] = 'SpecialCollection';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CollectionHooks::buildNavUrls';
-$wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
+//$wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
+//we use this so the sidebar is not cached in between requests
+//(could be a bit slower but we make sure the "Download as PDF" button is not shown when it is not required to)
+$wgHooks['SidebarBeforeOutput'][] = 'CollectionHooks::buildSidebar';
+
 $wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::siteNoticeAfter';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 $wgExtensionFunctions[] = 'CollectionHooks::onSetup';

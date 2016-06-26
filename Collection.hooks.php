@@ -123,13 +123,29 @@ class CollectionHooks {
 			$params['oldid'] = $title->getLatestRevID();
 		}
 
-		foreach ( $wgCollectionPortletFormats as $writer ) {
-			$params['writer'] = $writer;
-			$out[] = Array( 'text' => $sk->msg( 'coll-download_as', $wgCollectionFormats[$writer] )->escaped(),
-				        'id' => 'coll-download-as-' . $writer,
-					'href' => $booktitle->getLocalURL( $params ),
-				 );
+		//remove "Download PDF" button on broken pages.
+		$page = $sk->getWikiPage();
+		$categories = $page->getCategories();
+		$showDownload = true;
+		$blacklistedCategories = ["Structure", "Broken PDF"];
+
+		foreach ($categories as $category) {
+			if(in_array($category->getText(),$blacklistedCategories)){
+				$showDownload = false;
+				break;
+			}
 		}
+
+		if($showDownload) {
+			foreach ( $wgCollectionPortletFormats as $writer ) {
+				$params['writer'] = $writer;
+				$out[] = Array( 'text' => $sk->msg( 'coll-download_as', $wgCollectionFormats[$writer] )->escaped(),
+					        'id' => 'coll-download-as-' . $writer,
+						'href' => $booktitle->getLocalURL( $params ),
+					 );
+			}
+		}
+
 
 		// Move the 'printable' link into our section for consistency
 		if ( $action == 'view' || $action == 'purge' ) {
