@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"OC Ripper",
-			"Wikiwind"
+			"Wikiwind",
+			"Conquistador"
 		]
 	},
 	"coll-desc": "[[Special:Book|Napravi knjigu]]",
@@ -116,7 +117,7 @@
 	"coll-format-epub": "e-knjiga (EPUB)",
 	"right-collectionsaveasuserpage": "Spremi knjige kao korisničku stranicu",
 	"right-collectionsaveascommunitypage": "Spremi knjige kao stranicu zajednice",
-	"coll-print_export": "Ispis/извоз",
+	"coll-print_export": "Ispis/izvoz",
 	"coll-create_a_book": "Napravi knjigu",
 	"coll-create_a_book_tooltip": "Napravi knjigu ili kolekciju članaka",
 	"coll-book_creator": "Kreator knjiga",
@@ -149,5 +150,8 @@
 	"coll-not_addable": "Ova stranica ne može biti dodana",
 	"coll-make_suggestions": "Predloži stranice",
 	"coll-make_suggestions_tooltip": "Pokaži sugestije na temelju stranica u mojoj knjizi",
-	"coll-suggest_empty": "prazno"
+	"coll-suggest_empty": "prazno",
+	"coll-attribution-anons": "Anonimno: $1",
+	"coll-article-attribution": "<b>$1</b> <i>Izvor:</i> $2 <i>Saradnici:</i> $3",
+	"coll-image-attribution": "<b>$1</b> <i>Izvor:</i> $2 <i>Licenca:</i> $3 <i>Doprinijeli:</i> $4 <i>Originalni umjetnik:</i> $5"
 }

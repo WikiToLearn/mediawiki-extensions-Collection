@@ -6,6 +6,7 @@
 			"Mashoi7"
 		]
 	},
+	"coll-desc": "[[Special:Book|Luaji kirjua]].",
 	"coll-collection": "Kirju",
 	"coll-collections": "Kirjat",
 	"coll-unknown_subpage_title": "Tundematio alisivu",
@@ -74,7 +75,7 @@
 	"coll-print_export": "Tulosta/eksportiiruiče",
 	"coll-create_a_book": "Luaji kniigu",
 	"coll-book_creator": "Kirjanluadii",
-	"coll-download_as": "Pane taldeh gu $1",
+	"coll-download_as": "Pane taldeh $1:nny",
 	"coll-disable": "ota käytös iäre",
 	"coll-book_creator_disable": "Ota kirjanluadi käytös iäre",
 	"coll-book_creator_disable_tooltip": "Heitä kirjanluadijan käyttämine",
@@ -85,7 +86,7 @@
 	"coll-clear_collection": "Tyhjendä kirju",
 	"coll-clear_collection_confirm": "Tovengo tahtot tyhjendiä sinun kirjan?",
 	"coll-clear_collection_tooltip": "Ota kai wikisivut iäre sinun nygözes kirjaspäi",
-	"coll-help": "Kyzyö abuu",
+	"coll-help": "Kyzy abuu",
 	"coll-help_tooltip": "Ozuta abuu kirjoin luajindah näh",
 	"coll-helppage": "Help:Kniigat",
 	"coll-n_pages": "$1 {{PLURAL:$1|sivu|sivuu}}",

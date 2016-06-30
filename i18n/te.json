@@ -128,7 +128,7 @@
 	"coll-create_a_book": "ఓ పుస్తకాన్ని సృష్టించండి",
 	"coll-create_a_book_tooltip": "పుస్తకాన్ని లేదా వ్యాసాల సేకరణని సృష్టించండి",
 	"coll-book_creator": "పుస్తక కూర్పరి",
-	"coll-download_as": "$1 క్రింద దిగుమతి చేసుకోండి",
+	"coll-download_as": "$1 రూపంలో దిగుమతి చేసుకోండి",
 	"coll-download_as_tooltip": "ఈ పేజీ యొక్క $1 సంచికని దించుకోండి",
 	"coll-disable": "అచేతన పరచు",
 	"coll-book_creator_disable": "పుస్తకం కూర్పరిని అచేతనం చెయ్యి",
@@ -165,5 +165,6 @@
 	"coll-setting-toc-no": "కాదు",
 	"coll-setting-columns": "నిలువువరుసలు:",
 	"coll-attribution-anons": "అజ్ఞాతం: $1",
-	"coll-article-attribution": "<b>$1</b> <i>లంకె:</i> $2 <i>తోడ్పడినవారు:</i> $3"
+	"coll-article-attribution": "<b>$1</b> <i>లంకె:</i> $2 <i>తోడ్పడినవారు:</i> $3",
+	"coll-image-attribution": "<b>$1</b> <i>మూలం:</i> $2 <i>లైసెన్స్:</i> $3 <i>తోడ్పాటుదారులు:</i> $4 <i>కళాకారుడు:</i> $5"
 }

@@ -36,6 +36,10 @@ class SpecialCollection extends SpecialPage {
 		}
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	/**
 	 * @return String
 	 */
@@ -887,9 +891,9 @@ class SpecialCollection extends SpecialPage {
 			$items = $collection['items'];
 		}
 
-		$article = new Article( $title );
+		$wikiPage = new WikiPage( $title );
 
-		foreach ( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
+		foreach ( preg_split( '/[\r\n]+/', $wikiPage->getContent()->getNativeData() ) as $line ) {
 			$item = $this->parseCollectionLine( $collection, $line, $append );
 			if ( !is_null( $item ) ) {
 				$items[] = $item;

@@ -9,7 +9,7 @@
 			"Srdjan m"
 		]
 	},
-	"coll-desc": "[[Special:Book|Napravite knjige]]",
+	"coll-desc": "[[Special:Book|Omogućava pravljenje knjiga]]",
 	"coll-book_creator_intro": "<big>Pomoću ''pravljenja knjiga'' možete napraviti knjigu koja sadrži wiki stranice po Vašem izboru. Možete izvesti knjigu u raznim formatima (na primjer PDF ili ODF) ili naručiti štampanu kopiju.</big>",
 	"coll-manage_your_book": "Upravljanje Vašom knjigom",
 	"coll-book_creator_help": "Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu pomoći za knjige]] za više informacija.",
@@ -115,7 +115,7 @@
 	"coll-suggest_article_remove": "Stranica <strong>$1</strong> je uklonjena iz Vaše knjige ($2).",
 	"coll-suggest_undo_tooltip": "Poništi ovu radnju",
 	"coll-suggest_undo": "poništi",
-	"coll-load_local_book": "Kliknite OK da nastavite sa vašom knjigom $1 koja sadrži $2 wiki stranica. Kliknite Cancel da je obrišete i da započnete sa praznom knjigom.",
+	"coll-load_local_book": "Kliknite \"OK\" da nastavite sa vašom knjigom $1 koja sadrži {{PLURAL:$2|strana|stranica}}. Kliknite \"Cancel\" da je obrišete i da započnete sa praznom knjigom.",
 	"right-collectionsaveasuserpage": "Spremanje knjiga u vidu korisničkih stranica",
 	"right-collectionsaveascommunitypage": "Spremanje knjiga kao stranica zajednice",
 	"coll-print_export": "Štampaj/izvezi",
