@@ -1144,7 +1144,8 @@ class SpecialCollection extends SpecialPage {
 			}
 		}
 		if ( !$info ) {
-			$this->getOutput()->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
+			//$this->getOutput()->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
+			$this->forceRenderCollection();
 			return;
 		}
 		wfResetOutputBuffers();
