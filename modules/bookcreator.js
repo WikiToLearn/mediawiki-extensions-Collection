@@ -195,10 +195,12 @@ $( function () {
 			return;
 		}
 		var $this = $( this );
+		//why was this check implemented? we will never know. there is no reasoning in this, since the extension could be running in different namespaces
 		// title doesn't contain ":" (simplification!)
-		if ( !$this.attr( 'title' ) || $this.attr( 'title' ).indexOf( ':' ) !== -1 ) {
+		/*if ( !$this.attr( 'title' ) || $this.attr( 'title' ).indexOf( ':' ) !== -1 ) {
 			return;
-		}
+		}*/
+
 		if ( $this.parents( '.nopopups' ).length ) {
 			return;
 		}
