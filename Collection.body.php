@@ -1094,12 +1094,14 @@ class SpecialCollection extends SpecialPage {
 		case 'failed':
 			$out->setPageTitle( $this->msg( 'coll-rendering_failed_title' ) );
 
-			$statusText = $result->get( 'status', 'status' );
+			/*statusText = $result->get( 'status', 'status' );
 			if ( $statusText ) {
 				$status = $this->msg( 'coll-rendering_failed_status', $statusText )->text();
 			} else {
 				$status = '';
-			}
+			}*/
+			global $wgEmergencyContact;
+			$status = $this->msg("coll-rendering_failed_contact", $wgEmergencyContact)->text();
 
 			$template = new CollectionFailedTemplate();
 			$template->set( 'status', $status );

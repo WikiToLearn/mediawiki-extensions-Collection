@@ -94,6 +94,7 @@
 	"coll-rendering_failed_title": "Conversione non riuscita",
 	"coll-rendering_failed_text": "<strong>La generazione del file del documento non è riuscita.</strong>\n\n<p><span id=\"renderingStatus\">$1</span></p>",
 	"coll-rendering_failed_status": "<strong>Stato:</strong> $1",
+	"coll-rendering_failed_contact": "<strong>Conversione non riuscita.</strong> Contatta [mailto:$1] per ulteriore assistenza.",
 	"coll-failed_page_info_text_article": "{{MediaWiki:Coll-helppage}}/Informazioni sul rendering delle pagine",
 	"coll-failed_collection_info_text_article": "{{MediaWiki:Coll-helppage}}/Informazioni sul rendering di collezioni",
 	"coll-notfound_title": "Libro non trovato",
