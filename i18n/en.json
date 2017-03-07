@@ -81,7 +81,7 @@
 	"coll-rendering_failed_title": "Rendering failed",
 	"coll-rendering_failed_text": "<strong>Generation of the document file has failed.</strong>\n\n<p><span id=\"renderingStatus\">$1</span></p>",
 	"coll-rendering_failed_status": "<strong>Status:</strong> $1",
-	"coll-rendering_failed_contact": "<strong>Rendering failed.</strong> Please contact [mailto:$1] for further assistance.",
+	"coll-rendering_failed_contact": "<strong>Rendering failed.</strong> Please contact [mailto:$1 $1] for further assistance.",
 	"coll-failed_page_info_text_article": "{{MediaWiki:Coll-helppage}}/Rendering page info text",
 	"coll-failed_collection_info_text_article": "{{MediaWiki:Coll-helppage}}/Rendering collection info text",
 	"coll-notfound_title": "Book not found",
