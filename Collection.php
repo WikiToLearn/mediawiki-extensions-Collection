@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Session\SessionManager;
+
 /**
  * Collection Extension for MediaWiki
  *
@@ -277,9 +279,8 @@ function wfAjaxGetCollection() {
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
 
 function wfAjaxPostCollection( $collection = '', $redirect = '' ) {
-	if ( session_id() == '' ) {
-		wfSetupSession();
-	}
+	SessionManager::getGlobalSession()->persist();
+	
 	$collection = FormatJson::decode( $collection, true );
 	$collection['enabled'] = true;
 	$_SESSION['wsCollection'] = $collection;
