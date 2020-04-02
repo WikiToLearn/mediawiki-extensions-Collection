@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Session\SessionManager;
+
 /**
  * Collection Extension for MediaWiki
  *
@@ -34,9 +36,7 @@ class CollectionSession {
 	}
 
 	public static function startSession() {
-		if ( session_id() == '' ) {
-			wfSetupSession();
-		}
+		SessionManager::getGlobalSession()->persist();
 		self::clearCollection();
 	}
 
